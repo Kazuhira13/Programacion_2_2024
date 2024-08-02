@@ -1,21 +1,18 @@
 package SucursalesYcafe;
 
-import Agregados.Agua;
-import Agregados.Granos;
-import Agregados.Leche;
+import Agregados.Ingrediente;
 
-public class Cafe {
+import java.util.ArrayList;
+import java.util.List;
+public abstract class Cafe {
     private String nombre;
-    private String tamaño;
-    private int precio;
+    private int tamaño;
+    private double precio;
+    protected List<Ingrediente> ingredientes = new ArrayList<>();
 
-    public Granos arabicos [];
-    public Agua diezml [];
-    public Leche Descremada []; //composicion
-    public void preparar(){
-
-    }
-    public void servir(){
-
+    public Cafe(String nombre, int tamaño, double precio) {
+        this.nombre = nombre;
+        this.tamaño = tamaño;
+        this.precio = precio;
     }
 }
