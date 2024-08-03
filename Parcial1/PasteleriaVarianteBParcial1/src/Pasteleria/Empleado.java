@@ -1,4 +1,4 @@
-package SucursalesYcafe;
+package Pasteleria;
 
 public class Empleado {
     private String nombre;

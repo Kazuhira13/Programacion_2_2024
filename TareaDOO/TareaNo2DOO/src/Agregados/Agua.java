@@ -16,4 +16,11 @@ public class Agua implements Ingrediente{
     public int obtenerCantidad() {
         return cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "Agua{" +
+                "cantidad=" + cantidad +
+                '}';
+    }
 }

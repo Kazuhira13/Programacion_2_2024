@@ -17,4 +17,12 @@ public class Granos implements Ingrediente {
 
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Granos{" +
+                "tipo='" + tipo + '\'' +
+                ", cantida=" + cantida +
+                '}';
+    }
 }

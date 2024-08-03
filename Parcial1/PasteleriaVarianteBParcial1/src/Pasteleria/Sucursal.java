@@ -1,6 +1,6 @@
-package SucursalesYcafe;
+package Pasteleria;
 
-import Agregados.Ingrediente;
+import Ingrenietes.Ingrediente;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +8,10 @@ import java.util.List;
 public class Sucursal {
     private String nombre;
     private String direccion;
-    private List<Empleado> empleados = new ArrayList<>();
-    private List<Equipo> equipos = new ArrayList<>();
-    private Cafe cafe;
-    private List<Ingrediente> ingredientes = new ArrayList<>();
-
+    protected List<Empleado>empleados = new ArrayList<>();
+    protected List<Equipo>equipos = new ArrayList<>();
+    protected List<Ingrediente>ingredientes = new ArrayList<>();
+    private Postre postre;
 
     public Sucursal(String nombre, String direccion) {
         this.nombre = nombre;
@@ -22,20 +21,25 @@ public class Sucursal {
     public void agregarEmpleado(Empleado empleado){
         System.out.println("Agregar Empleado");
         empleados.add(empleado);
-    }
-
-    public void agregarEspecialidad(Equipo equipo){
-        System.out.println("Agregar Especialidad");
-        equipos.add(equipo);
 
     }
-    public void  agregarEspecialidad(Cafe cafe){
-        System.out.println("Agregar Cafe");
-        this.cafe = cafe;
-    }
+
     public void agregarIngrediente(Ingrediente ingrediente){
         System.out.println("Agregar Ingrediente");
         ingredientes.add(ingrediente);
+
+    }
+
+    public void agregarEquipo(Equipo equipo){
+        System.out.println("Agregar Equipo");
+        equipos.add(equipo);
+
+    }
+
+    public void agregarEspecialidad(Postre postre){
+        System.out.println("Agregar Especialidad");
+        this.postre = postre;
+
     }
 
     @Override
@@ -45,8 +49,8 @@ public class Sucursal {
                 ", direccion='" + direccion + '\'' +
                 ", empleados=" + empleados +
                 ", equipos=" + equipos +
-                ", cafe=" + cafe +
                 ", ingredientes=" + ingredientes +
+                ", postre=" + postre +
                 '}';
     }
 }

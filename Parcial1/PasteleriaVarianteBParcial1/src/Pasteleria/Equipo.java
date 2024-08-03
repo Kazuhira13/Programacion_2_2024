@@ -1,32 +1,34 @@
-package SucursalesYcafe;
+package Pasteleria;
 
 public class Equipo {
-    private String tipo;
-    private String estado;
-    public Equipo(String tipo, String estado) {
-        this.tipo = tipo;
-        this.estado = estado;
+    private String Tipo;
+    private String Estado;
+
+    public Equipo(String Tipo, String Estado) {
+        this.Tipo = Tipo;
+        this.Estado = Estado;
     }
+
     public void encender(){
         System.out.println("Encendiendo Equipo");
-        estado = "Encendido";
+        Estado = "Encendido";
     }
 
     public void apagar(){
         System.out.println("Apagando Equipo");
-        estado = "Apagado";
+        Estado= "Apagado";
     }
 
     public void reparar(){
         System.out.println("Reparando Equipo");
-        estado = "Reparado";
+        Estado = "Reparado";
     }
-//para que imprima
+
     @Override
     public String toString() {
         return "Equipo{" +
-                "tipo='" + tipo + '\'' +
-                ", estado='" + estado + '\'' +
+                "Tipo='" + Tipo + '\'' +
+                ", Estado='" + Estado + '\'' +
                 '}';
     }
 }

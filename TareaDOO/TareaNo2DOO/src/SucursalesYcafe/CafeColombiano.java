@@ -15,4 +15,12 @@ public class CafeColombiano extends Cafe{
         ingredientes.add(new Agua(100));
 
     }
+
+    @Override
+    public String toString() {
+        return "CafeColombiano{" +
+                "TipoGrano='" + TipoGrano + '\'' +
+                ", ingredientes=" + ingredientes +
+                '}';
+    }
 }

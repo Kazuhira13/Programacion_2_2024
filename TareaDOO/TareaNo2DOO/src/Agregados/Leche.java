@@ -17,4 +17,12 @@ public class Leche implements Ingrediente{
     public int obtenerCantidad() {
         return cantida;
     }
+
+    @Override
+    public String toString() {
+        return "Leche{" +
+                "tipo='" + tipo + '\'' +
+                ", cantida=" + cantida +
+                '}';
+    }
 }
